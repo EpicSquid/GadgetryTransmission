@@ -1,0 +1,7 @@
+{
+    "parent": "gadgetrycore:item/cable",
+    "textures": {
+        "particle": "gadgetrytransmission:blocks/item_pipe",
+        "cable": "gadgetrytransmission:blocks/item_pipe"
+    }
+}

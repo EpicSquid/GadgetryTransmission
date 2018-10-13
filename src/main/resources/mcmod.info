@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gadgetrytransmission",
+  "name": "Gadgetry: Transmission",
+  "description": "Transmission module for Gadgetry.",
+  "version": "0.2.0",
+  "mcversion": "1.12",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Elucent"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [forge, elulib, gadgetrycore]
+}
+]

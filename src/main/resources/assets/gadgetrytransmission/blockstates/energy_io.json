@@ -1,0 +1,10 @@
+{
+    "variants":{
+        "facing=down":  { "model": "gadgetrytransmission:energy_io", "x": 180 },
+        "facing=up":    { "model": "gadgetrytransmission:energy_io" },
+        "facing=north": { "model": "gadgetrytransmission:energy_io", "x": 270, "y": 180 },
+        "facing=south": { "model": "gadgetrytransmission:energy_io", "x": 270 },
+        "facing=west":  { "model": "gadgetrytransmission:energy_io", "x": 270, "y": 90 },
+        "facing=east":  { "model": "gadgetrytransmission:energy_io", "x": 270, "y": 270 }
+    }
+}

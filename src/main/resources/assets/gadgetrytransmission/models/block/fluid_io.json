@@ -1,0 +1,8 @@
+{
+    "parent": "gadgetrytransmission:block/io",
+    "textures": {
+        "particle": "gadgetrytransmission:blocks/fluid_io_2",
+        "parts": "gadgetrytransmission:blocks/fluid_io",
+        "plate": "gadgetrytransmission:blocks/fluid_io_2"
+    }
+}
