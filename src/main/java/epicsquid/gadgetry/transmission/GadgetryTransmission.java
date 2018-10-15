@@ -20,7 +20,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @Mod(modid = GadgetryTransmission.MODID, version = GadgetryTransmission.VERSION, name = GadgetryTransmission.NAME, dependencies = "required-before:gadgetrycore")
 public class GadgetryTransmission {
   public static final String MODID = "gadgetrytransmission";
-  public static final String VERSION = "0.2.0";
+  public static final String VERSION = "@VERSION@";
   public static final String NAME = "Gadgetry: Transmission";
 
   @SidedProxy(clientSide = "epicsquid.gadgetry.transmission.proxy.ClientProxy", serverSide = "epicsquid.gadgetry.transmission.proxy.CommonProxy") public static CommonProxy proxy;
