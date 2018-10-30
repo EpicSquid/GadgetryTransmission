@@ -1,5 +1,6 @@
 package epicsquid.gadgetry.transmission;
 
+import epicsquid.gadgetry.core.GadgetryCore;
 import epicsquid.gadgetry.transmission.proxy.CommonProxy;
 import epicsquid.gadgetry.transmission.recipe.TransmissionRecipeRegistry;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,7 +18,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = GadgetryTransmission.MODID, version = GadgetryTransmission.VERSION, name = GadgetryTransmission.NAME, dependencies = "required-before:gadgetrycore")
+@Mod(modid = GadgetryTransmission.MODID, version = GadgetryTransmission.VERSION, name = GadgetryTransmission.NAME, dependencies =
+    "required-after:gadgetrycore@[" + GadgetryCore.VERSION + ",)")
 public class GadgetryTransmission {
   public static final String MODID = "gadgetrytransmission";
   public static final String VERSION = "@VERSION@";
