@@ -18,12 +18,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = GadgetryTransmission.MODID, version = GadgetryTransmission.VERSION, name = GadgetryTransmission.NAME, dependencies =
-    "required-after:gadgetrycore@[" + GadgetryCore.VERSION + ",)")
+@Mod(modid = GadgetryTransmission.MODID, version = GadgetryTransmission.VERSION, name = GadgetryTransmission.NAME, dependencies = GadgetryTransmission.DEPENDENCIES)
 public class GadgetryTransmission {
   public static final String MODID = "gadgetrytransmission";
   public static final String VERSION = "@VERSION@";
   public static final String NAME = "Gadgetry: Transmission";
+  public static final String DEPENDENCIES = "required-before:gadgetrycore@[" + GadgetryCore.VERSION + ",)";
 
   @SidedProxy(clientSide = "epicsquid.gadgetry.transmission.proxy.ClientProxy", serverSide = "epicsquid.gadgetry.transmission.proxy.CommonProxy") public static CommonProxy proxy;
 
