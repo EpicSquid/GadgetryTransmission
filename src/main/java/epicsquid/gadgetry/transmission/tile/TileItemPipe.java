@@ -9,6 +9,7 @@ import epicsquid.gadgetry.core.lib.tile.module.FaceConfig.FaceIO;
 import epicsquid.gadgetry.core.lib.tile.module.ModuleInventory;
 import net.minecraft.item.ItemStack;
 
+//This mostly works, but bugs out every now and then. something wrong with the base networking syc maybe?
 public class TileItemPipe extends TileCable {
 
   public static final String ITEM = "item";
