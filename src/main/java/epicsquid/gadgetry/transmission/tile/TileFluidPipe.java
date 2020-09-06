@@ -14,9 +14,13 @@ public class TileFluidPipe extends TileCable {
 
   public static final String FLUID = "fluid";
 
+  //In lieu of actually fixing anything in any major way, just simply going to up capacities here. original values was 125. New is 500.
+  //The base class this is extending needs reworking for compatibility issues.
+  //Ultimately we want a pipe that will push fluid through based on some sort of pressure system so that connects and volume capacity are more dynamic.
+  //the current model is a hard limit and more connections actually **reduces** flow if the network has too high fluid input. Which is silly. You made physics cry.
   public TileFluidPipe() {
     super(FluidCableNetwork.TYPE_FLUID);
-    addModule(new ModuleFluidPipe(FLUID, this, 125));
+    addModule(new ModuleFluidPipe(FLUID, this, 500));
     config.setAllIO(FaceIO.NEUTRAL);
     config.setAllModules(FLUID);
   }
@@ -30,7 +34,7 @@ public class TileFluidPipe extends TileCable {
 
     public ModuleFluidPipe(String name, TileModular tile, int giveLimit) {
       super(name, tile, giveLimit);
-      addTank(new ExtendedFluidTank(125, new PredicateTrue(), true) {
+      addTank(new ExtendedFluidTank(500, new PredicateTrue(), true) {
         @Override
         public int fill(FluidStack amount, boolean doFill) {
           if (!(network instanceof FluidCableNetwork)) {

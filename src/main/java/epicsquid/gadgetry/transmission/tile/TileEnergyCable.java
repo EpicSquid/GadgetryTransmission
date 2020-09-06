@@ -12,9 +12,12 @@ public class TileEnergyCable extends TileCable {
 
   public static final String ENERGY = "energy";
 
+  //In lieu of actually fixing anything in any major way, just simply going to up capacities here. original values were 1600. New is 3600 because why not.
+  //The base class this is extending needs reworking for compatibility issues.
+  //Ultimately we want a cable that will transmit everything going through it, and the only delay should be from the length of the network and any heat loss from the cable itself. 
   public TileEnergyCable() {
     super(EnergyCableNetwork.TYPE_ENERGY);
-    addModule(new ModuleEnergyCable(ENERGY, this, 1600, 1600, 1600));
+    addModule(new ModuleEnergyCable(ENERGY, this, 3600, 3600, 3600));
     config.setAllIO(FaceIO.NEUTRAL);
     config.setAllModules(ENERGY);
   }
